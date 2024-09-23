@@ -3,7 +3,36 @@ body{
    text-align: center;
 }
 
-#board{
-    /* background-color: skyblue; */
+#gameContainer {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+#board {
+    width: 100%;
+    height: auto;
     background-image: url(./flappybirdbg.png);
+    max-width: 360px; /* Adjust as needed */
+    border: 1px solid black;
+}
+
+#scoreBoard {
+    width: 80px; /* Set a fixed width for the scoreboard */
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em; /* Smaller font size */
+    margin-right: 10px; /* Space between scoreboard and canvas */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Padding for better spacing */
+}
+
+#scoreBoard span {
+    display: block;
 }

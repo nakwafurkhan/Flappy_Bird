@@ -101,10 +101,10 @@ function update() {
             pipe.passed = true;
         }
 
-        if (detectCollision(bird, pipe)) {
-            gameOver = true;
-        }
-    }
+    //     if (detectCollision(bird, pipe)) {
+    //         gameOver = true;
+    //     }
+    // }
 
     //clear pipes
     while (pipeArray.length > 0 && pipeArray[0].x < -pipeWidth) {
